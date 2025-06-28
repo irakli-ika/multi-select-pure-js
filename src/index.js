@@ -1,6 +1,6 @@
 import template from "./template.js";
 
-class MultiSelectJs {
+class MultiSelectPureJs {
   constructor(container, optionItems = [], config = {}) {
     this.container = container;
     this.optionItems = optionItems;
@@ -281,11 +281,11 @@ class MultiSelectJs {
 }
 
 if (typeof window !== "undefined") {
-  window.MultiSelectJs = MultiSelectJs;
+  window.MultiSelectPureJs = MultiSelectPureJs;
 }
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = MultiSelectJs;
+  module.exports = MultiSelectPureJs;
 }
 
-export default MultiSelectJs;
+export default MultiSelectPureJs;

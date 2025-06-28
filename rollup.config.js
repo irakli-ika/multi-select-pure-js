@@ -7,7 +7,7 @@ export default defineConfig([
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/multiselectjs.cjs.js',
+      file: 'dist/multi-select-pure-js.cjs.js',
       format: 'cjs'
     }
   },
@@ -16,7 +16,7 @@ export default defineConfig([
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/multiselectjs.esm.js',
+      file: 'dist/multi-select-pure-js.esm.js',
       format: 'esm'
     }
   },
@@ -25,9 +25,9 @@ export default defineConfig([
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/multiselectjs.umd.js',
+      file: 'dist/multi-select-pure-js.umd.js',
       format: 'umd',
-      name: 'MultiSelectJs'
+      name: 'MultiSelectPureJs'
     }
   }
 ]);

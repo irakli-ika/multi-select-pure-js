@@ -1,4 +1,4 @@
-# MultiselectJs
+# multi-select-pure-js
 
 A clean, customizable multi-select dropdown component built with pure JavaScript and Tailwind CSS.
 
@@ -19,13 +19,13 @@ A clean, customizable multi-select dropdown component built with pure JavaScript
 Include directly from CDN:
 
 ```html
-<script src="https://unpkg.com/multiselect"></script>
+<script src="https://unpkg.com/multi-select-pure-js"></script>
 ```
 
 Or install via NPM 
 
 ```bash
-npm i multiselectjs
+npm i multi-select-pure-js
 ```
 
 ## Usage
@@ -36,11 +36,11 @@ npm i multiselectjs
     <div id="my-select" data-ms></div>
     ```
 
-2. Initialize the MultiSelectJs
+2. Initialize the MultiSelectPureJs
     - Option A: ESM
     
     ```js
-    import MultiSelectJs from 'multiselectjs';
+    import MultiSelectPureJs from 'multi-select-pure-js';
 
     const options = [
         { id: 1, name: 'Option A' },
@@ -48,13 +48,13 @@ npm i multiselectjs
         { id: 3, name: 'Option C' }
     ];
 
-    new MultiSelectJs(document.querySelector('[data-ms]'), options);
+    new MultiSelectPureJs(document.querySelector('[data-ms]'), options);
     ```
 
     - Option B: Using CDN
 
     ```html
-    <script src="https://unpkg.com/multiselectjs"></script>
+    <script src="https://unpkg.com/multi-select-pure-js"></script>
     <script>
         const options = [
             { id: 1, name: 'Option A' },
@@ -62,14 +62,14 @@ npm i multiselectjs
             { id: 3, name: 'Option C' }
         ];
 
-        new MultiSelectJs(document.querySelector('[data-ms]'), options);
+        new MultiSelectPureJs(document.querySelector('[data-ms]'), options);
     </script>
     ```
 
     - Option C: Using CommonJS
     
     ```js
-    const MultiSelectJs = require('multiselectjs');
+    const MultiSelectPureJs = require('multi-select-pure-js');
     
     const options = [
             { id: 1, name: 'Option A' },
@@ -77,7 +77,7 @@ npm i multiselectjs
             { id: 3, name: 'Option C' }
         ];
 
-    new MultiSelectJs(document.querySelector('[data-ms]'), options);
+    new MultiSelectPureJs(document.querySelector('[data-ms]'), options);
     ```
 
 ## Example Options Format
