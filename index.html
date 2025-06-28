@@ -11,7 +11,8 @@
     <div class="w-1/2 ml-8 h-screen flex items-center justify-center">
       <div id="devLang" data-ms></div>
     </div>
-    <script src="./dist/MultiSelectJs.umd.js"></script>
+    <!-- <script src="./dist/MultiSelectJs.umd.js"></script> -->
+    <script src="https://unpkg.com/multi-select-pure-js"></script>
     <script>
       const options = [
         { id: 1, name: 'PHP' },
@@ -26,7 +27,7 @@
         { id: 10, name: 'Kotlin' }
       ];
 
-      new MultiSelectJs(
+      new MultiSelectPureJs(
         document.getElementById('devLang'),
         options,
         config = {
