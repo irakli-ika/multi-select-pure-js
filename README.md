@@ -33,7 +33,6 @@ npm i multiselectjs
 1. Add a container element that will be passed to the MultiSelect instance:
 
     ```html
-    <!-- By ID -->
     <div id="my-select" data-ms></div>
     ```
 
