@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiselect Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="w-1/2 ml-8 h-screen flex items-center justify-center">
+      <div id="devLang" data-ms></div>
+    </div>
+    <script src="./dist/MultiSelectJs.umd.js"></script>
+    <script>
+      const options = [
+        { id: 1, name: 'PHP' },
+        { id: 2, name: 'JavaScript' },
+        { id: 3, name: 'Python' },
+        { id: 4, name: 'Ruby' },
+        { id: 5, name: 'Java' },
+        { id: 6, name: 'C#' },
+        { id: 7, name: 'C++' },
+        { id: 8, name: 'Go' },
+        { id: 9, name: 'Swift' },
+        { id: 10, name: 'Kotlin' }
+      ];
+
+      new MultiSelectJs(
+        document.getElementById('devLang'),
+        options,
+        config = {
+          placeholder: 'Select programming languages',
+          search: true,
+          selectAllText: 'Select All',
+          noOptionsText: 'No options available',
+          noResultsText: 'No results found',
+          searchPlaceholder: 'Search options',
+          // borderRadius: 'sm', // Tailwind border radius class (sm, md, lg) or custom value [e.g., "[4px]", "[8px]"]
+          darkMode: false, // Enable dark mode styles
+          checkboxShape: 'square', // Tailwind checkbox shape (rounded, square) or custom value
+          theme: {
+            colors: {
+              border: 'gray-600',
+              textPrimary: 'gray-200',
+              textSecondary: 'gray-400',
+              optionHover: 'gray-700',
+              optionSelected: 'blue-400'
+            },
+            darkColors: {
+              tagBg: 'gray-600',
+              tagText: 'white',
+              textPrimary: 'gray-200',
+              textSecondary: 'gray-400',
+              border: 'gray-500',
+              optionHover: 'gray-700',
+              optionSelected: 'blue-400',
+              inputFocusBorder: 'blue-400',
+              background: 'gray-800',
+              dropdownBg: 'gray-800',
+              inputBg: 'gray-800',
+              inputText: 'gray-200'
+            }
+          }
+        });
+    </script>
+  </body>
+
+</html>
